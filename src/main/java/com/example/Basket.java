@@ -22,7 +22,7 @@ public class Basket {
 
     public void removeFruit(Fruit fruit) {
         // TODO: Remove the fruit from the basket
-        removeFruit(fruit);
+        fruits.remove(fruit);
     }
 
     // TODO: Implement getters, setters, and any other methods you find necessary
@@ -33,12 +33,12 @@ public class Basket {
         this.capacity = capacity;
     }
 
-    public void setFruits(Fruit fruits){
-        this.fruits = Fruit fruits;
+    public void setFruits(ArrayList<Fruit> fruits){
+        this.fruits = fruits;
 
     }
-    public String getFruits(){
-        return fruits;
+    public ArrayList<Fruit> getFruits(){
+        return this.fruits;
     }
 }
 
